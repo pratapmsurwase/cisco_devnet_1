@@ -19,7 +19,7 @@ def generate_fortune() -> str:
     return random.choice(FORTUNES)
 
 
-def generate_lucky_numbers(how_many) -> list:
+def generate_lucky_numbers(how_many: int) -> list:
     """Returns a list of (random) 'lucky' numbers."""
     lucky_numbers = []
     for _ in range(how_many):
